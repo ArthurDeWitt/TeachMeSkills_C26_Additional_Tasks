@@ -16,8 +16,8 @@ public class FibonacciGenerator {
 
         // Создание массива для хранения чисел
         BigInteger[] fibonacciNumbers = new BigInteger[limit];
-        fibonacciNumbers[0] = BigInteger.ZERO; // Задаём первое число Фибоначчи
-        fibonacciNumbers[1] = BigInteger.ONE; //  Задаём второе число Фибоначчи
+        fibonacciNumbers[0] = BigInteger.valueOf(0); // Задаём первое число Фибоначчи
+        fibonacciNumbers[1] = BigInteger.valueOf(1); //  Задаём второе число Фибоначчи
 
         // Создание цикла для генерации чисел Фибоначчи
         for (int i = 2; i < limit; i++) {
