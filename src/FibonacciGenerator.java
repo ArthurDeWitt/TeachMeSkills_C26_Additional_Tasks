@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class FibonacciGenerator {
     public static void main(String[] args) {
@@ -14,13 +15,13 @@ public class FibonacciGenerator {
         }
 
         // Создание массива для хранения чисел
-        long[] fibonacciNumbers = new long[limit];
-        fibonacciNumbers[0] = 0; // Первое число
-        fibonacciNumbers[1] = 1; // Второе число
+        BigInteger[] fibonacciNumbers = new BigInteger[limit];
+        fibonacciNumbers[0] = BigInteger.ZERO; // Задаём первое число Фибоначчи
+        fibonacciNumbers[1] = BigInteger.ONE; //  Задаём второе число Фибоначчи
 
         // Создание цикла для генерации чисел Фибоначчи
         for (int i = 2; i < limit; i++) {
-            fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+            fibonacciNumbers[i] = fibonacciNumbers[i - 1].add(fibonacciNumbers[i - 2]);
         }
 
         // Вывод результата
