@@ -1,7 +1,7 @@
 # TeachMeSkills_C26_Additional_Tasks
 Additional tasks
 # Fibonacci Generator 
-A generator program outputting the first 100 Fibonacci numbers is implemented.
+A generator program outputting the first 1-100 Fibonacci numbers is implemented.
 # Square Figures
 A program to find the area of a rectangle, triangle or circle.
 Depending on what the user chooses, it calculates the area of either rectangle, triangle, or circle.
