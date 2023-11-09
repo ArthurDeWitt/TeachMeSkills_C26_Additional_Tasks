@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.math.BigInteger;
 
 public class SquareFigures {
     public static void main(String[] args) {
@@ -27,6 +26,11 @@ public class SquareFigures {
                 width = scanner2.nextDouble();
                 // Расчёт площади прямоугольника
                 square = length * width;
+                // Проверка на 0 и отрицательные значения
+                if (length<=0 || width<=0){
+                    System.out.println("Enter positive values");
+                    return;
+                }
                 System.out.println("Square of rectangle is: " + square);
                 return;
             // Круг
@@ -35,6 +39,12 @@ public class SquareFigures {
                 System.out.println("Enter the value of the circle radius");
                 Scanner scanner3 = new Scanner(System.in);
                 radius = scanner3.nextDouble();
+                // Проверка на 0 и отрицательные значения
+                if (radius <= 0){
+                    System.out.println("Enter positive values");
+                    return;
+                }
+                // Расчёт площади круга
                 square = pi * radius * radius;
                 System.out.println("Square of rectangle is: " + square);
                 return;
@@ -50,6 +60,11 @@ public class SquareFigures {
                 System.out.println("Enter the third side of the triangle");
                 Scanner scanner6 = new Scanner(System.in);
                 side3 = scanner6.nextDouble();
+                // Проверка на 0 и отрицательные значения
+                if (side1 <= 0 || side2 <=0 || side3 <= 0){
+                    System.out.println("Enter positive values");
+                    return;
+                }
                 /*
                  Проверка существования такого треугольника
                  (Если сумма двух любых сторон меньше третьей, то такого треугольника не существует)
