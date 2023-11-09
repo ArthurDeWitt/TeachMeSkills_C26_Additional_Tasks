@@ -1,3 +1,5 @@
+package com.teachmeskills.additionaltasks;
+
 import java.util.Scanner;
 import java.math.BigInteger;
 
